@@ -1,0 +1,5 @@
+name: wpweb infotech practical
+type: module
+description: Provide custom simple form and config form
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10

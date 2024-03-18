@@ -1,0 +1,47 @@
+<?php
+
+function wpweb_infotech_schema(){
+  $schema['wpweb_infotech'] = array(
+    'description' => 'A table contain user info',
+    'fields' => [
+      'id' => [
+        'description' => 'ID value',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+
+      'name' => [
+        'description' => 'Name value',
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' =>TRUE
+      ],
+
+      'dob' => [
+        'description' => 'DOB value',
+        // 'type' => 'datetime',
+        'type' => 'varchar',
+        'mysql_type' => 'datetime',
+        'not null' => FALSE,
+      ],
+      
+      'gender' => [
+        'description' => 'Gender value',
+        'type' => 'varchar',
+        'length' => '10',
+        'not null' => FALSE,
+      ],
+
+      'profile_photo_fid' => [
+        'description' => 'Profile photo Id value',
+        'type' => 'int',
+        'length' => 11,
+        'not null' => FALSE,
+      ],
+    ],
+
+    'primary key' => ['id'], 
+  );
+  return $schema;
+}

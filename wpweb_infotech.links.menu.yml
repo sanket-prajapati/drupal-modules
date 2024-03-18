@@ -1,0 +1,6 @@
+wpweb_infotech.date_config:
+  title: Date config
+  description: Provide admin date settings
+  parent: system.admin_config_system
+  route_name: wpweb_infotech.date_config
+  weight: 10

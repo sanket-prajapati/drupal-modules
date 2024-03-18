@@ -1,0 +1,31 @@
+wpweb_infotech.simple_form:
+  path: '/wpweb-infotech/custom-form'
+  defaults:
+    _form: 'Drupal\wpweb_infotech\Form\WpwebInfotechForm'
+    _title: 'Wpweb Infotech form'
+  requirements:
+    _permission: access content
+
+wpweb_infotech.form_data_list:
+  path: '/wpweb-infotech/form-data-list'
+  defaults:
+    _controller: 'Drupal\wpweb_infotech\Controller\ListController::formDataList'
+    _title: 'List'
+  requirements:
+    _permission: access content
+
+wpweb_infotech.cofig_date_form:
+  path: '/admin/config/wpweb-date-2'
+  defaults:
+    _form: 'Drupal\wpweb_infotech\Form\WpwebDateConfigForm'
+    _title: 'Wpweb infotech date settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+wpweb_infotech.date_config:
+  path: '/admin/config/system/wpweb-date'
+  defaults:
+    _title: 'Date config'
+    _form: 'Drupal\wpweb_infotech\Form\DateConfigForm'
+  requirements:
+    _permission: 'administer site configuration'
